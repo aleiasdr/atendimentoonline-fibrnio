@@ -3,86 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brsulnet Telecom - Serviços de Comunicação Multimídia</title>
-    <meta name="description" content="Brsulnet Telecom LTDA - Provedor de internet, telefonia e serviços de comunicação multimídia em São Marcos/RS desde 2011. Conexão de qualidade para residências e empresas.">
-    <meta name="keywords" content="provedor de internet, telefonia, comunicação multimídia, São Marcos, Rio Grande do Sul, telecomunicações, wi-fi, fibra óptica">
-    
-    <!-- Informações da empresa para Google -->
-    <meta name="author" content="Brsulnet Telecom LTDA">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Schema.org para Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Brsulnet Telecom LTDA",
-      "alternateName": "Brsulnet",
-      "url": "https://www.brsulnet.com.br",
-      "logo": "https://www.brsulnet.com.br/images/logo.png",
-      "description": "Provedor de serviços de comunicação multimídia em São Marcos/RS",
-      "foundingDate": "2011-03-03",
-      "foundingLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "São Marcos",
-          "addressRegion": "RS",
-          "addressCountry": "BR"
-        }
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Avenida Venâncio Aires, 513, Sala 02",
-        "addressLocality": "São Marcos",
-        "addressRegion": "RS",
-        "postalCode": "95190-000",
-        "addressCountry": "BR"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+55-54-3290-0000",
-        "contactType": "Customer Service",
-        "areaServed": "BR",
-        "availableLanguage": "Portuguese"
-      },
-      "sameAs": []
-    }
-    </script>
-    
-    <!-- CSS -->
+    <title>Jectix Telecom | Internet Rápida e Serviços de Telecomunicação</title>
+    <meta name="description" content="Jectix Telecom - Provedor de internet e serviços de telecomunicação em Salvador/BA. Oferecemos internet de alta velocidade, VoIP, manutenção de equipamentos e mais.">
+    <meta name="keywords" content="internet Salvador, provedor internet, telecomunicação, VoIP, manutenção computadores, equipamentos informática">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Reset e configurações gerais */
+        :root {
+            --primary: #1a56db;
+            --primary-dark: #1e429f;
+            --secondary: #f97316;
+            --dark: #1f2937;
+            --light: #f9fafb;
+            --gray: #6b7280;
+            --success: #10b981;
+            --border-radius: 8px;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --transition: all 0.3s ease;
+        }
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        :root {
-            --primary-color: #0056b3;
-            --secondary-color: #003d82;
-            --accent-color: #007bff;
-            --light-color: #f8f9fa;
-            --dark-color: #212529;
-            --gray-color: #6c757d;
-            --success-color: #28a745;
-            --warning-color: #ffc107;
-            --danger-color: #dc3545;
-            --company-blue: #0056b3;
-            --company-light-blue: #e3f2fd;
-        }
-        
-        html {
-            scroll-behavior: smooth;
         }
         
         body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--dark);
             line-height: 1.6;
-            color: var(--dark-color);
-            background-color: var(--light-color);
+            background-color: #f5f7fa;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1rem;
         }
         
         .container {
@@ -92,10 +51,10 @@
             padding: 0 20px;
         }
         
-        /* Header e Navegação */
+        /* Header */
         header {
             background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -112,120 +71,95 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            text-decoration: none;
         }
         
-        .logo-icon {
-            color: var(--company-blue);
-            font-size: 28px;
+        .logo img {
+            height: 50px;
+            width: auto;
         }
         
         .logo-text {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--dark-color);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 0;
         }
         
         .logo-text span {
-            color: var(--company-blue);
+            font-size: 0.9rem;
+            color: var(--gray);
         }
         
-        .logo-subtitle {
-            font-size: 12px;
-            color: var(--gray-color);
-            margin-top: -5px;
-        }
-        
-        nav ul {
+        .nav-menu ul {
             display: flex;
             list-style: none;
             gap: 30px;
         }
         
-        nav a {
+        .nav-menu a {
             text-decoration: none;
-            color: var(--dark-color);
-            font-weight: 600;
-            font-size: 16px;
-            transition: color 0.3s;
+            color: var(--dark);
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
         }
         
-        nav a:hover {
-            color: var(--company-blue);
+        .nav-menu a:hover {
+            color: var(--primary);
         }
         
-        .mobile-menu-btn {
+        .mobile-toggle {
             display: none;
-            background: none;
-            border: none;
-            font-size: 24px;
-            color: var(--dark-color);
+            font-size: 1.5rem;
             cursor: pointer;
         }
         
-        /* Seção Hero */
+        /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--company-blue), var(--secondary-color));
+            background: linear-gradient(rgba(26, 86, 219, 0.9), rgba(30, 66, 159, 0.9)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 80px 0;
+            padding: 100px 0;
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
         
-        .hero:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="%23ffffff"/></svg>');
-            background-size: 100% 100px;
-            background-position: bottom;
-            background-repeat: no-repeat;
-        }
-        
-        .hero h1 {
-            font-size: 2.8rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
-            position: relative;
-            z-index: 1;
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
         }
         
         .hero p {
             font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            opacity: 0.9;
-            position: relative;
-            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto 2rem;
         }
         
         .cta-button {
             display: inline-block;
-            background-color: white;
-            color: var(--company-blue);
+            background-color: var(--secondary);
+            color: white;
             padding: 15px 30px;
-            border-radius: 50px;
+            border-radius: var(--border-radius);
             text-decoration: none;
-            font-weight: 700;
+            font-weight: 600;
             font-size: 1.1rem;
-            transition: all 0.3s;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            position: relative;
-            z-index: 1;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
         }
         
         .cta-button:hover {
+            background-color: #ea580c;
             transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-            background-color: var(--company-light-blue);
         }
         
-        /* Seção de Serviços */
-        .services {
+        /* Sections */
+        section {
             padding: 80px 0;
         }
         
@@ -236,69 +170,61 @@
         
         .section-title h2 {
             font-size: 2.5rem;
-            color: var(--dark-color);
-            margin-bottom: 15px;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
         }
         
-        .section-title p {
-            color: var(--gray-color);
-            max-width: 600px;
-            margin: 0 auto;
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
         }
         
+        /* Services */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 30px;
         }
         
         .service-card {
             background-color: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-            border-top: 4px solid var(--company-blue);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
         }
         
         .service-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
         
         .service-icon {
-            background-color: rgba(0, 86, 179, 0.1);
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            height: 80px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
+            font-size: 2.5rem;
         }
         
-        .service-icon i {
-            font-size: 30px;
-            color: var(--company-blue);
+        .service-content {
+            padding: 25px;
         }
         
-        .service-card h3 {
-            font-size: 1.5rem;
+        .service-content h3 {
+            color: var(--primary);
             margin-bottom: 15px;
-            color: var(--dark-color);
         }
         
-        .service-card p {
-            color: var(--gray-color);
-            margin-bottom: 20px;
-        }
-        
-        /* Seção Sobre */
-        .about {
-            padding: 80px 0;
-            background-color: var(--company-light-blue);
-        }
-        
+        /* About */
         .about-content {
             display: flex;
             align-items: center;
@@ -311,9 +237,9 @@
         
         .about-image {
             flex: 1;
-            border-radius: 10px;
+            border-radius: var(--border-radius);
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: var(--shadow);
         }
         
         .about-image img {
@@ -322,149 +248,94 @@
             display: block;
         }
         
-        .about-text h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: var(--dark-color);
-        }
-        
-        .about-text p {
-            margin-bottom: 20px;
-            color: var(--gray-color);
-        }
-        
-        .company-info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+        .company-info {
+            background-color: var(--light);
+            padding: 30px;
+            border-radius: var(--border-radius);
             margin-top: 30px;
         }
         
-        .info-item {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
         }
         
         .info-item h4 {
-            color: var(--company-blue);
-            margin-bottom: 10px;
-            font-size: 1.1rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+            font-size: 1rem;
         }
         
-        /* Seção Cobertura */
-        .coverage {
-            padding: 80px 0;
-            background-color: white;
-        }
-        
-        .coverage-map {
-            background-color: #f8f9fa;
-            border-radius: 10px;
-            padding: 40px;
-            text-align: center;
-            margin-top: 30px;
-            border: 2px dashed var(--company-blue);
-        }
-        
-        .coverage-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 30px;
-        }
-        
-        .coverage-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            padding: 15px;
-            background-color: var(--company-light-blue);
-            border-radius: 8px;
-        }
-        
-        .coverage-item i {
-            color: var(--company-blue);
-            font-size: 24px;
-        }
-        
-        /* Seção Contato */
-        .contact {
-            padding: 80px 0;
-            background-color: #f8f9fa;
-        }
-        
+        /* Contact */
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 50px;
         }
         
-        .contact-info h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: var(--dark-color);
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
         }
         
-        .contact-info p {
-            margin-bottom: 30px;
-            color: var(--gray-color);
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
         }
         
-        .contact-details {
-            margin-bottom: 30px;
-        }
-        
-        .contact-detail {
+        .contact-icon {
+            background-color: var(--primary);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
         }
         
-        .contact-detail i {
-            color: var(--company-blue);
-            font-size: 20px;
-            width: 30px;
+        .contact-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
         }
         
-        .contact-form input,
-        .contact-form textarea,
-        .contact-form select {
-            width: 100%;
-            padding: 15px;
+        .form-group {
             margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
         }
         
-        .contact-form textarea {
-            height: 150px;
-            resize: vertical;
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
         }
         
-        .submit-btn {
-            background-color: var(--company-blue);
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s;
+        .form-control {
             width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #d1d5db;
+            border-radius: var(--border-radius);
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            transition: var(--transition);
         }
         
-        .submit-btn:hover {
-            background-color: var(--secondary-color);
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(26, 86, 219, 0.1);
         }
         
         /* Footer */
         footer {
-            background-color: var(--dark-color);
+            background-color: var(--dark);
             color: white;
             padding: 60px 0 20px;
         }
@@ -476,47 +347,25 @@
             margin-bottom: 40px;
         }
         
-        .footer-logo {
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        
-        .footer-logo span {
-            color: var(--company-blue);
-        }
-        
-        .footer-cnpj {
-            font-size: 14px;
-            opacity: 0.8;
-            margin-bottom: 15px;
-        }
-        
-        .footer-about p {
-            margin-bottom: 20px;
-            opacity: 0.8;
-        }
-        
-        .footer-links h4,
-        .footer-contact h4 {
-            font-size: 1.2rem;
+        .footer-column h3 {
+            color: white;
+            font-size: 1.3rem;
             margin-bottom: 20px;
             position: relative;
             padding-bottom: 10px;
         }
         
-        .footer-links h4:after,
-        .footer-contact h4:after {
+        .footer-column h3::after {
             content: '';
             position: absolute;
-            left: 0;
-            bottom: 0;
             width: 50px;
-            height: 2px;
-            background-color: var(--company-blue);
+            height: 3px;
+            background-color: var(--secondary);
+            bottom: 0;
+            left: 0;
         }
         
-        .footer-links ul {
+        .footer-links {
             list-style: none;
         }
         
@@ -525,568 +374,584 @@
         }
         
         .footer-links a {
-            color: rgba(255, 255, 255, 0.8);
+            color: #d1d5db;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: var(--transition);
         }
         
         .footer-links a:hover {
-            color: var(--company-blue);
-        }
-        
-        .footer-contact p {
-            margin-bottom: 10px;
-            opacity: 0.8;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .footer-contact i {
-            color: var(--company-blue);
-            width: 20px;
+            color: var(--secondary);
+            padding-left: 5px;
         }
         
         .footer-bottom {
             text-align: center;
             padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 14px;
-            opacity: 0.7;
+            border-top: 1px solid #374151;
+            font-size: 0.9rem;
+            color: #9ca3af;
         }
         
         .footer-bottom a {
-            color: var(--company-blue);
+            color: var(--secondary);
             text-decoration: none;
         }
         
-        /* Páginas Internas */
-        .page-header {
-            background-color: var(--company-blue);
-            color: white;
-            padding: 60px 0;
-            text-align: center;
+        /* Privacy Policy Page */
+        .privacy-content {
+            background-color: white;
+            padding: 50px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-top: 30px;
         }
         
-        .page-header h1 {
-            font-size: 2.5rem;
+        .privacy-content h3 {
+            color: var(--primary);
+            margin-top: 30px;
             margin-bottom: 15px;
         }
         
-        .page-content {
-            padding: 60px 0;
-        }
-        
-        .page-content h2 {
-            font-size: 2rem;
-            margin: 30px 0 15px;
-            color: var(--dark-color);
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--company-light-blue);
-        }
-        
-        .page-content h3 {
-            font-size: 1.5rem;
-            margin: 25px 0 10px;
-            color: var(--dark-color);
-        }
-        
-        .page-content p {
+        .privacy-content p {
             margin-bottom: 15px;
-            color: var(--gray-color);
         }
         
-        .page-content ul, .page-content ol {
+        .privacy-content ul {
+            margin-left: 20px;
             margin-bottom: 20px;
-            padding-left: 20px;
         }
         
-        .page-content li {
+        .privacy-content li {
             margin-bottom: 8px;
-            color: var(--gray-color);
         }
         
-        .legal-info {
-            background-color: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
-            margin: 30px 0;
-            border-left: 4px solid var(--company-blue);
-        }
-        
-        .legal-info h3 {
-            color: var(--company-blue);
-            margin-bottom: 15px;
-        }
-        
-        .info-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        
-        .info-table th, .info-table td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-        
-        .info-table th {
-            background-color: var(--company-light-blue);
-            color: var(--dark-color);
-            font-weight: 600;
-        }
-        
-        .info-table tr:hover {
-            background-color: #f5f5f5;
-        }
-        
-        /* Responsividade */
+        /* Responsive */
         @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.3rem;
-            }
-            
             .about-content {
                 flex-direction: column;
+            }
+            
+            .hero h2 {
+                font-size: 2.5rem;
             }
         }
         
         @media (max-width: 768px) {
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            nav {
+            .nav-menu {
                 position: fixed;
-                top: 70px;
+                top: 80px;
                 left: 0;
                 width: 100%;
                 background-color: white;
+                box-shadow: var(--shadow);
                 padding: 20px;
-                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
                 transform: translateY(-100%);
                 opacity: 0;
                 visibility: hidden;
-                transition: all 0.3s;
+                transition: var(--transition);
             }
             
-            nav.active {
+            .nav-menu.active {
                 transform: translateY(0);
                 opacity: 1;
-            visibility: visible;
+                visibility: visible;
             }
             
-            nav ul {
+            .nav-menu ul {
                 flex-direction: column;
                 gap: 15px;
             }
             
-            .hero h1 {
-                font-size: 1.8rem;
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .hero {
+                padding: 70px 0;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            section {
+                padding: 60px 0;
             }
             
             .section-title h2 {
                 font-size: 2rem;
             }
             
-            .company-info-grid {
-                grid-template-columns: 1fr;
+            .privacy-content {
+                padding: 30px;
             }
         }
         
         @media (max-width: 576px) {
-            .hero {
-                padding: 60px 0;
+            .hero h2 {
+                font-size: 1.8rem;
             }
             
-            .services, .about, .contact, .coverage {
-                padding: 60px 0;
-            }
-            
-            .hero h1 {
-                font-size: 1.6rem;
+            .section-title h2 {
+                font-size: 1.8rem;
             }
             
             .contact-container {
                 grid-template-columns: 1fr;
             }
-        }
-        
-        /* Cookie Consent Banner */
-        .cookie-consent {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: var(--dark-color);
-            color: white;
-            padding: 20px;
-            z-index: 9999;
-            display: none;
-            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .cookie-consent.active {
-            display: block;
-        }
-        
-        .cookie-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        .cookie-text {
-            flex: 1;
-            margin-right: 20px;
-            font-size: 14px;
-        }
-        
-        .cookie-buttons {
-            display: flex;
-            gap: 10px;
-        }
-        
-        .cookie-btn {
-            padding: 10px 20px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        
-        .cookie-accept {
-            background-color: var(--company-blue);
-            color: white;
-        }
-        
-        .cookie-decline {
-            background-color: transparent;
-            color: white;
-            border: 1px solid white;
-        }
-        
-        /* Loading */
-        .loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 99999;
-            transition: opacity 0.5s, visibility 0.5s;
-        }
-        
-        .loading.hidden {
-            opacity: 0;
-            visibility: hidden;
-        }
-        
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid var(--company-blue);
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        /* Badge de Segurança */
-        .security-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background-color: var(--success-color);
-            color: white;
-            padding: 5px 10px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 600;
-            margin-top: 10px;
-        }
-        
-        /* WhatsApp Flutuante */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            z-index: 999;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            
+            .privacy-content {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div class="loading" id="loading">
-        <div class="spinner"></div>
-    </div>
-
-    <!-- WhatsApp Flutuante -->
-    <a href="https://wa.me/555432900000?text=Olá! Gostaria de saber mais sobre os planos da Brsulnet" class="whatsapp-float" target="_blank" id="whatsappFloat">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <!-- Cookie Consent Banner -->
-    <div class="cookie-consent" id="cookieConsent">
-        <div class="cookie-content">
-            <div class="cookie-text">
-                <p>Este site usa cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="politica-privacidade.html" style="color: var(--company-blue);">Política de Privacidade</a>.</p>
-            </div>
-            <div class="cookie-buttons">
-                <button class="cookie-btn cookie-decline" id="declineCookies">Recusar</button>
-                <button class="cookie-btn cookie-accept" id="acceptCookies">Aceitar</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Header/Navegação -->
+    <!-- Header -->
     <header>
         <div class="container header-container">
-            <a href="index.html" class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-satellite-dish"></i>
+            <div class="logo">
+                <div class="logo-img-placeholder">
+                    <i class="fas fa-satellite-dish" style="font-size: 2.5rem; color: var(--primary);"></i>
                 </div>
-                <div>
-                    <div class="logo-text">Brsul<span>net</span></div>
-                    <div class="logo-subtitle">Telecom LTDA</div>
+                <div class="logo-text">
+                    <h1>Jectix Telecom</h1>
+                    <span>Conectando você ao futuro</span>
                 </div>
-            </a>
+            </div>
             
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <div class="mobile-toggle" id="mobileToggle">
                 <i class="fas fa-bars"></i>
-            </button>
+            </div>
             
-            <nav id="mainNav">
+            <nav class="nav-menu" id="navMenu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="quem-somos.html">Quem Somos</a></li>
-                    <li><a href="servicos.html">Serviços</a></li>
-                    <li><a href="cobertura.html">Cobertura</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#about">Quem Somos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><a href="#privacy">Política de Privacidade</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Conteúdo Principal (Home) -->
-    <main id="mainContent">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>Internet Rápida e Confiável para São Marcos e Região</h1>
-                <p>Há mais de 14 anos conectando residências e empresas com a melhor tecnologia em telecomunicações. Qualidade e estabilidade que você pode confiar.</p>
-                <a href="contato.html" class="cta-button">Contrate Agora</a>
-                <div class="security-badge">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>CNPJ: 13.338.689/0001-00</span>
-                </div>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Internet de Alta Velocidade para sua Empresa e Residência</h2>
+            <p>Conectividade confiável, suporte especializado e soluções completas em telecomunicações para Salvador e região.</p>
+            <a href="#contact" class="cta-button">Solicitar Proposta</a>
+        </div>
+    </section>
 
-        <!-- Serviços Section -->
-        <section class="services">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Nossos Serviços</h2>
-                    <p>Soluções completas em telecomunicações para atender todas as suas necessidades</p>
+    <!-- Services Section -->
+    <section id="services" style="background-color: white;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+                <p>Soluções completas em telecomunicações para atender suas necessidades</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Provedor de Acesso à Internet</h3>
+                        <p>Internet de alta velocidade com estabilidade e suporte técnico especializado para empresas e residências.</p>
+                    </div>
                 </div>
                 
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-wifi"></i>
-                        </div>
-                        <h3>Internet Banda Larga</h3>
-                        <p>Internet de alta velocidade com tecnologia de ponta para residências e empresas. Planos adaptados às suas necessidades.</p>
-                        <a href="servicos.html#internet">Ver Planos →</a>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-phone-alt"></i>
                     </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <h3>Telefonia Fixa e VOIP</h3>
-                        <p>Comunicação clara e estável com serviços de telefonia fixa e VOIP para sua empresa ou residência.</p>
-                        <a href="servicos.html#telefonia">Saiba mais →</a>
+                    <div class="service-content">
+                        <h3>VoIP - Telefonia IP</h3>
+                        <p>Comunicação por voz sobre protocolo internet com qualidade superior e redução de custos para sua empresa.</p>
                     </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-tv"></i>
-                        </div>
-                        <h3>TV por Assinatura</h3>
-                        <p>Entretenimento de qualidade com os melhores canais através de tecnologia por cabo e satélite.</p>
-                        <a href="servicos.html#tv">Ver Pacotes →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sobre Section -->
-        <section class="about">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>Quem Somos</h2>
-                        <p>A <strong>Brsulnet Telecom LTDA</strong> é uma empresa sólida e estabelecida no mercado de telecomunicações desde 2011. Com sede em São Marcos/RS, atuamos como provedor de serviços de comunicação multimídia, oferecendo soluções completas em internet, telefonia e TV por assinatura.</p>
-                        <p>Nosso compromisso é fornecer conectividade de qualidade, suporte técnico especializado e um atendimento personalizado para cada cliente.</p>
-                        
-                        <div class="company-info-grid">
-                            <div class="info-item">
-                                <h4><i class="fas fa-calendar-alt"></i> Fundação</h4>
-                                <p>03 de Março de 2011</p>
-                            </div>
-                            <div class="info-item">
-                                <h4><i class="fas fa-map-marker-alt"></i> Localização</h4>
-                                <p>São Marcos - RS</p>
-                            </div>
-                            <div class="info-item">
-                                <h4><i class="fas fa-users"></i> Porte</h4>
-                                <p>Capital Social: R$ 11.348.816,00</p>
-                            </div>
-                            <div class="info-item">
-                                <h4><i class="fas fa-check-circle"></i> Situação</h4>
-                                <p>Ativa desde 03/03/2011</p>
-                            </div>
-                        </div>
-                        
-                        <a href="quem-somos.html" class="cta-button">Conheça Nossa História</a>
-                    </div>
-                    <div class="about-image">
-                        <!-- Imagem representativa da empresa -->
-                        <div style="width:100%; height:400px; background: linear-gradient(135deg, var(--company-blue), var(--secondary-color)); display:flex; align-items:center; justify-content:center; color: white; flex-direction: column; padding: 30px;">
-                            <i class="fas fa-building" style="font-size: 80px; margin-bottom: 20px;"></i>
-                            <h3 style="color: white; margin-bottom: 10px;">Brsulnet Telecom LTDA</h3>
-                            <p style="text-align: center; color: rgba(255,255,255,0.9);">Sede Própria em São Marcos/RS</p>
-                            <p style="text-align: center; color: rgba(255,255,255,0.9); margin-top: 10px;">Av. Venâncio Aires, 513 - Sala 02<br>Centro - São Marcos/RS</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Cobertura Section -->
-        <section class="coverage">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Área de Cobertura</h2>
-                    <p>Atendemos São Marcos e regiões próximas com a melhor infraestrutura de telecomunicações</p>
                 </div>
                 
-                <div class="coverage-map">
-                    <i class="fas fa-map-marked-alt" style="font-size: 50px; color: var(--company-blue); margin-bottom: 20px;"></i>
-                    <h3 style="margin-bottom: 15px;">Cobertura em São Marcos e Região</h3>
-                    <p>Nossa infraestrutura abrange toda a cidade de São Marcos e estamos constantemente expandindo para atender novas áreas.</p>
-                    
-                    <div class="coverage-list">
-                        <div class="coverage-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>São Marcos - Centro</strong>
-                                <p>Cobertura completa</p>
-                            </div>
-                        </div>
-                        <div class="coverage-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>São Marcos - Bairros</strong>
-                                <p>Expansão em andamento</p>
-                            </div>
-                        </div>
-                        <div class="coverage-item">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <strong>Região Metropolitana</strong>
-                                <p>Consulte disponibilidade</p>
-                            </div>
-                        </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Venda de Equipamentos</h3>
+                        <p>Equipamentos de informática, telefonia e comunicação com qualidade e garantia.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Manutenção e Reparo</h3>
+                        <p>Manutenção de computadores, periféricos e equipamentos de comunicação com técnicos especializados.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-broadcast-tower"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Soluções em Telecomunicações</h3>
+                        <p>Serviços de comunicação multimídia e outras soluções personalizadas para sua empresa.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Suporte Técnico Especializado</h3>
+                        <p>Atendimento rápido e eficiente para resolver suas necessidades em telecomunicações.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contato Section -->
-        <section class="contact">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Entre em Contato</h2>
-                    <p>Tire suas dúvidas, solicite um orçamento ou agende uma instalação</p>
-                </div>
-                
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <h3>Fale Conosco</h3>
-                        <p>Estamos prontos para atender você com a melhor solução em telecomunicações.</p>
-                        
-                        <div class="contact-details">
-                            <div class="contact-detail">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div>
-                                    <strong>Endereço Comercial</strong>
-                                    <p>Av. Venâncio Aires, 513, Sala 02<br>Centro - São Marcos/RS<br>CEP: 95190-000</p>
-                                </div>
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Quem Somos</h2>
+                <p>Conheça a Jectix Telecom e nossa trajetória no mercado de telecomunicações</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A <strong>Jectix Telecom</strong> é uma empresa estabelecida em Salvador/BA, atuando no mercado de telecomunicações desde 2016. Nosso compromisso é oferecer soluções de conectividade de alta qualidade para empresas e residências, com foco na satisfação do cliente e excelência no atendimento.</p>
+                    
+                    <p>Especializados em provedor de acesso à internet, VoIP, venda de equipamentos de informática e comunicação, além de serviços de manutenção e reparo, estamos preparados para atender desde pequenas empresas até grandes corporações.</p>
+                    
+                    <p>Com uma equipe técnica qualificada e em constante atualização, garantimos que nossos clientes tenham a melhor experiência em telecomunicações, com estabilidade, segurança e suporte eficiente.</p>
+                    
+                    <div class="company-info">
+                        <h3>Informações da Empresa</h3>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <h4>Razão Social</h4>
+                                <p>Jectix Telecomunicacao e Servicos LTDA</p>
                             </div>
-                            <div class="contact-detail">
-                                <i class="fas fa-phone"></i>
-                                <div>
-                                    <strong>Telefone</strong>
-                                    <p>(54) 3290-0000</p>
-                                </div>
+                            <div class="info-item">
+                                <h4>CNPJ</h4>
+                                <p>24.029.566/0001-04</p>
                             </div>
-                            <div class="contact-detail">
-                                <i class="fas fa-envelope"></i>
-                                <div>
-                                    <strong>E-mail</strong>
-                                    <p>contato@brsulnet.com.br</p>
-                                </div>
+                            <div class="info-item">
+                                <h4>Data de Abertura</h4>
+                                <p>22/01/2016</p>
                             </div>
-                            <div class="contact-detail">
-                                <i class="fas fa-clock"></i>
-                                <div>
-                                    <strong>Horário de Atendimento</strong>
-                                    <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
-                                </div>
+                            <div class="info-item">
+                                <h4>Porte</h4>
+                                <p>Micro Empresa</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Capital Social</h4>
+                                <p>R$ 20.000,00</p>
+                            </div>
+                            <div class="info-item">
+                                <h4>Situação Cadastral</h4>
+                                <p style="color: var(--success); font-weight: 500;">Ativa</p>
                             </div>
                         </div>
-                        
-                        <div class="social-links">
-                            <a href="#" style="color: var(--company-blue); margin-right: 15px; font-size: 20px;"><i class="fab fa-facebook"></i></a>
-                            <a href="#" style="color: var(--company-blue); margin-right: 15px; font-size: 20px;"><i class="fab fa-instagram"></i></a>
-                            <a href="#" style="color: var(--company-blue); margin-right: 15px; font-size: 20px;"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Equipe Jectix Telecom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background-color: white;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Entre em Contato</h2>
+                <p>Estamos prontos para atender suas necessidades em telecomunicações</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Endereço</h3>
+                            <p>Rua Santa Veruza, 24 - Pernambués<br>Salvador - BA, 41120-000</p>
                         </div>
                     </div>
                     
-                    <div class="contact-form">
-                        <form id="contactForm">
-                            <input type="text" placeholder="Seu nome completo" required>
-                            <input type="email" placeholder="Seu e-mail" required>
-                            <input type="tel" placeholder="Se
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Telefone</h3>
+                            <p>(71) 321X-XXXX</p>
+                            <p><small>*Para ver o telefone completo, entre em contato via e-mail</small></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>contato@jectixtelecom.com.br</p>
+                            <p><small>*E-mail ilustrativo baseado nos dados fornecidos</small></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envie sua Mensagem</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Serviço de Interesse</label>
+                            <select id="service" class="form-control" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="internet">Internet</option>
+                                <option value="voip">VoIP - Telefonia IP</option>
+                                <option value="equipamentos">Equipamentos</option>
+                                <option value="manutencao">Manutenção</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="cta-button" style="width: 100%;">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy">
+        <div class="container">
+            <div class="section-title">
+                <h2>Política de Privacidade</h2>
+                <p>Conheça como tratamos seus dados pessoais</p>
+            </div>
+            
+            <div class="privacy-content">
+                <p><strong>Última atualização:</strong> Fevereiro de 2024</p>
+                
+                <p>A Jectix Telecom ("nós", "nosso" ou "a empresa") valoriza a privacidade e a segurança dos dados pessoais de seus clientes e visitantes. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos suas informações quando você utiliza nossos serviços ou interage com nosso site.</p>
+                
+                <h3>1. Dados que Coletamos</h3>
+                <p>Coletamos diferentes tipos de dados para fornecer e melhorar nossos serviços:</p>
+                <ul>
+                    <li><strong>Dados de contato:</strong> Nome, e-mail, telefone, endereço.</li>
+                    <li><strong>Dados de uso:</strong> Informações sobre como você interage com nosso site e serviços.</li>
+                    <li><strong>Dados técnicos:</strong> Endereço IP, tipo de navegador, provedor de acesso, páginas visitadas.</li>
+                    <li><strong>Dados de contrato:</strong> Informações necessárias para a prestação de serviços contratados.</li>
+                </ul>
+                
+                <h3>2. Finalidades do Tratamento de Dados</h3>
+                <p>Utilizamos seus dados para as seguintes finalidades:</p>
+                <ul>
+                    <li>Prestação dos serviços contratados;</li>
+                    <li>Comunicação sobre serviços, atualizações e suporte;</li>
+                    <li>Melhoria da experiência do usuário em nosso site;</li>
+                    <li>Cumprimento de obrigações legais e regulatórias;</li>
+                    <li>Envio de comunicações de marketing (com seu consentimento).</li>
+                </ul>
+                
+                <h3>3. Compartilhamento de Dados</h3>
+                <p>Seus dados podem ser compartilhados apenas quando necessário para:</p>
+                <ul>
+                    <li>Cumprir obrigações legais ou solicitações governamentais;</li>
+                    <li>Prestar serviços por meio de parceiros autorizados;</li>
+                    <li>Proteger nossos direitos, propriedade ou segurança, bem como de nossos clientes.</li>
+                </ul>
+                
+                <h3>4. Direitos do Titular dos Dados</h3>
+                <p>De acordo com a Lei Geral de Proteção de Dados (LGPD), você tem direito a:</p>
+                <ul>
+                    <li>Confirmar a existência de tratamento de seus dados;</li>
+                    <li>Acessar seus dados pessoais;</li>
+                    <li>Corrigir dados incompletos, inexatos ou desatualizados;</li>
+                    <li>Solicitar a eliminação de dados tratados com seu consentimento;</li>
+                    <li>Revogar o consentimento a qualquer momento.</li>
+                </ul>
+                
+                <h3>5. Segurança das Informações</h3>
+                <p>Adotamos medidas técnicas e organizacionais para proteger seus dados contra acessos não autorizados, perda, destruição ou alteração. Nossos sistemas utilizam criptografia e controle de acesso para garantir a segurança das informações.</p>
+                
+                <h3>6. Retenção de Dados</h3>
+                <p>Mantemos seus dados pessoais apenas pelo tempo necessário para cumprir as finalidades para as quais foram coletados, respeitando os prazos legais e contratuais aplicáveis.</p>
+                
+                <h3>7. Contato do Encarregado de Dados</h3>
+                <p>Para exercer seus direitos ou esclarecer dúvidas sobre esta Política de Privacidade, entre em contato:</p>
+                <p><strong>E-mail:</strong> privacidade@jectixtelecom.com.br<br>
+                <strong>Endereço:</strong> Rua Santa Veruza, 24 - Pernambués, Salvador - BA, 41120-000</p>
+                
+                <h3>8. Alterações nesta Política</h3>
+                <p>Podemos atualizar esta Política de Privacidade periodicamente. A versão mais recente estará sempre disponível em nosso site, com a data da última atualização.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Jectix Telecom</h3>
+                    <p>Conectando você ao futuro com soluções completas em telecomunicações desde 2016.</p>
+                    <p style="margin-top: 15px;">
+                        <i class="fas fa-certificate" style="color: var(--secondary); margin-right: 5px;"></i>
+                        CNPJ: 24.029.566/0001-04
+                    </p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#about">Quem Somos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                        <li><a href="#privacy">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Serviços</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services">Provedor de Internet</a></li>
+                        <li><a href="#services">VoIP - Telefonia IP</a></li>
+                        <li><a href="#services">Venda de Equipamentos</a></li>
+                        <li><a href="#services">Manutenção e Reparo</a></li>
+                        <li><a href="#services">Soluções em Telecom</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Rua Santa Veruza, 24 - Pernambués, Salvador - BA</li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> (71) 321X-XXXX</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> contato@jectixtelecom.com.br</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jectix Telecom - Jectix Telecomunicacao e Servicos LTDA. Todos os direitos reservados.</p>
+                <p>Site desenvolvido para fins comerciais e de divulgação de serviços.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileToggle.innerHTML = navMenu.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Close mobile menu if open
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                }
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Form submission handling
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    service: document.getElementById('service').value,
+                    message: document.getElementById('message').value
+                };
+                
+                // In a real implementation, you would send this data to a server
+                // For demo purposes, we'll just show an alert
+                alert(`Obrigado, ${formData.name}! Sua mensagem foi enviada com sucesso. Em breve entraremos em contato.`);
+                
+                // Reset form
+                contactForm.reset();
+            });
+        }
+        
+        // Add current year to footer
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearSpan = document.getElementById('currentYear');
+            if (yearSpan) {
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
+</body>
+</html>
